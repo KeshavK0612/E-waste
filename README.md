@@ -10,3 +10,17 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+## About the project
+# E-Waste App
+
+The E-Waste App is a mobile/web platform designed to help individuals and organizations responsibly dispose of electronic waste. Users can:
+- Locate the nearest e-waste collection and recycling centers
+- Schedule pickups or drop-offs
+- Track their recycling impact over time
+- Learn about proper e-waste handling and environmental impact
+
+This project promotes environmental sustainability by making e-waste recycling accessible and easy for everyone.
+
+
