@@ -1,5 +1,7 @@
 // App.jsx
 import React from 'react';
+import Header from './components/Header';
+import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Welcome from './pages/Welcome';
@@ -15,11 +17,17 @@ import Rewards from './pages/Rewards';
 import Profile from './pages/Profile';
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    // Add any additional logout logic here
+  };
+
   return (
     <CartProvider>
       <Router>
-        {/* ✅ Show Navbar */}
-        <Navbar />
+        <Header isLoggedIn={isLoggedIn} onLogout={handleLogout} />
         <Routes>
           <Route path="/" element={<Welcome />} />
           <Route path="/signup" element={<SignUp />} />
@@ -34,7 +42,6 @@ function App() {
         </Routes>
       </Router>
     </CartProvider>
-    
   );
 }
 
